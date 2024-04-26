@@ -1,0 +1,157 @@
+2024-04-17T07:40:51.698+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.chanty.hrms.HrmsApplication          : Starting HrmsApplication using Java 17.0.2 with PID 1120 (D:\Project\backend\hrms\target\classes started by Dell in D:\Project\backend\hrms)
+2024-04-17T07:40:51.706+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.chanty.hrms.HrmsApplication          : The following 1 profile is active: "dev"
+2024-04-17T07:40:54.637+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-17T07:40:54.877+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 2 JPA repository interfaces.
+2024-04-17T07:40:56.453+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-17T07:40:56.476+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-17T07:40:56.476+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-17T07:40:56.591+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-17T07:40:56.591+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4766 ms
+2024-04-17T07:40:56.951+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-17T07:40:57.225+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17T07:40:57.332+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-17T07:40:57.798+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-17T07:40:57.873+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-17T07:40:58.433+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66e1b2a
+2024-04-17T07:40:58.436+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-17T07:41:01.012+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17T07:41:01.219+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-17T07:41:02.071+07:00  WARN 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-17T07:41:02.464+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ce59833, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ccdc8c8, org.springframework.security.web.context.SecurityContextHolderFilter@7f129873, org.springframework.security.web.header.HeaderWriterFilter@201c1d99, org.springframework.security.web.authentication.logout.LogoutFilter@57cfd353, com.chanty.hrms.config.security.AuthTokenFilter@6d0fe80c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ceeb762, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b75fdd0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30dbcffd, org.springframework.security.web.session.SessionManagementFilter@67de5328, org.springframework.security.web.access.ExceptionTranslationFilter@53dfb073, org.springframework.security.web.access.intercept.AuthorizationFilter@50720344]
+2024-04-17T07:41:02.929+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-17T07:41:02.964+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.chanty.hrms.HrmsApplication          : Started HrmsApplication in 12.347 seconds (process running for 13.824)
+2024-04-17T07:41:33.951+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17T07:41:33.952+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-17T07:41:33.954+07:00  INFO 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-17T11:06:20.077+07:00  WARN 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.chanty.hrms.exception.GlobalExceptionHandler#handleUnauthorizedException(UnauthorizedException)
+
+java.lang.IllegalStateException: Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.chanty.hrms.exception.ErrorResponse> com.chanty.hrms.exception.GlobalExceptionHandler.handleUnauthorizedException(com.chanty.hrms.exception.UnauthorizedException): No suitable resolver
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:225) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:432) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:74) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:175) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at com.chanty.hrms.config.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:45) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-04-17T11:06:20.496+07:00 ERROR 1120 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-2] c.c.hrms.config.security.AuthEntryPoint  : Unauthorized error: Bad credentials
+2024-04-17T20:48:48.596+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.chanty.hrms.HrmsApplication          : Starting HrmsApplication using Java 17.0.2 with PID 6624 (D:\Project\backend\hrms\target\classes started by Dell in D:\Project\backend\hrms)
+2024-04-17T20:48:48.601+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.chanty.hrms.HrmsApplication          : The following 1 profile is active: "dev"
+2024-04-17T20:48:50.601+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-17T20:48:50.780+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160 ms. Found 2 JPA repository interfaces.
+2024-04-17T20:48:51.806+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-17T20:48:51.847+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-17T20:48:51.848+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-17T20:48:51.972+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-17T20:48:51.972+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3204 ms
+2024-04-17T20:48:52.284+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-17T20:48:52.427+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17T20:48:52.504+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-17T20:48:53.041+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-17T20:48:53.135+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-17T20:48:54.122+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e364f1f
+2024-04-17T20:48:54.127+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-17T20:49:02.118+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17T20:49:02.505+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-17T20:49:04.010+07:00  WARN 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-17T20:49:04.596+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1220969, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d57fc11, org.springframework.security.web.context.SecurityContextHolderFilter@66fd9613, org.springframework.security.web.header.HeaderWriterFilter@4eb0ed44, org.springframework.security.web.authentication.logout.LogoutFilter@5dce3e82, com.chanty.hrms.config.security.AuthTokenFilter@7200702, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@deb0c0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6385b07d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37b04a2a, org.springframework.security.web.session.SessionManagementFilter@51dd74a0, org.springframework.security.web.access.ExceptionTranslationFilter@40f7fb45, org.springframework.security.web.access.intercept.AuthorizationFilter@2d9cc10]
+2024-04-17T20:49:05.300+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-17T20:49:05.318+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [main] com.chanty.hrms.HrmsApplication          : Started HrmsApplication in 17.992 seconds (process running for 22.562)
+2024-04-17T20:54:23.385+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17T20:54:23.387+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-17T20:54:23.395+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-04-17T23:39:53.149+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-17T23:39:53.336+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-17T23:39:53.371+07:00  INFO 6624 --- [HUMAN_RESOURCE_MANAGEMENT_SYSTEM] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
