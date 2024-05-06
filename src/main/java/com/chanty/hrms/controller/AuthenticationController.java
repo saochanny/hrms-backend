@@ -2,6 +2,7 @@ package com.chanty.hrms.controller;
 
 import com.chanty.hrms.dto.LoginRequest;
 import com.chanty.hrms.dto.LoginResponse;
+import com.chanty.hrms.model.setup.User;
 import com.chanty.hrms.service.auth.AuthenticationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -28,8 +29,17 @@ public class AuthenticationController {
     return ResponseEntity.ok(authenticationService.renewToken(refreshToken));
   }
 
-  @GetMapping("/valid")
+  @GetMapping("/token/valid")
   public ResponseEntity<Boolean> isValidate(@RequestParam("accessToken") String token) {
     return ResponseEntity.ok(authenticationService.isValidToken(token));
+  }
+  @GetMapping("/user")
+  public ResponseEntity<User> getUser(){
+    return ResponseEntity.ok(authenticationService.getCurrentUser());
+  }
+
+  @PostMapping("/logout")
+  public void logout(){
+    authenticationService.logout();
   }
 }

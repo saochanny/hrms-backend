@@ -3,7 +3,10 @@ package com.chanty.hrms.service.auth;
 import com.chanty.hrms.dto.LoginRequest;
 import com.chanty.hrms.dto.LoginResponse;
 import com.chanty.hrms.exception.UnauthorizedException;
+import com.chanty.hrms.model.setup.User;
 import com.chanty.hrms.repository.setup.UserRepository;
+import com.chanty.hrms.service.UserService;
+import com.chanty.hrms.service.impl.UserServiceImpl;
 import com.chanty.hrms.utils.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +24,7 @@ public class AuthenticationService {
   private final JwtUtils jwtUtils;
   private final AuthenticationManager authenticationManager;
   private final UserRepository userRepository;
+  private final UserService userService;
 
   @Value("${app.security.jwt.access_expires}")
   private int accessExpires;
@@ -62,5 +66,20 @@ public class AuthenticationService {
     }
     String username = jwtUtils.getUserNameFromJwtToken(refreshToken);
     return loginResponse(username);
+  }
+
+  public User getCurrentUser() {
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    Object principal = authentication.getPrincipal();
+    AuthenticationUser authenticationUser= (AuthenticationUser) principal;
+      return userRepository.findByEmail(authenticationUser.getEmail()).orElseThrow(
+              ()->new UnauthorizedException("Unauthorized user")
+      );
+
+  }
+
+
+  public void logout() {
+    SecurityContextHolder.clearContext();
   }
 }
