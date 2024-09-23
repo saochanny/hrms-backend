@@ -1,5 +1,6 @@
 package com.chanty.hrms.dto;
 
+import com.chanty.hrms.dto.user.UserResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,9 +11,11 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PaginationDto {
-    private int page;
+public class PaginationResponse {
+    private int totalPage;
+    private int pageSize;
     private int size;
-    private int total;
-    private List<?> content;
+    private int totalElement;
+    private int currentPage;
+    private List<UserResponse> content;
 }

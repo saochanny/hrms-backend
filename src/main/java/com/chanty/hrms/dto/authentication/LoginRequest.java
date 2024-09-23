@@ -1,4 +1,4 @@
-package com.chanty.hrms.dto;
+package com.chanty.hrms.dto.authentication;
 
 import lombok.Data;
 

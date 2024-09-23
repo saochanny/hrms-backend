@@ -1,4 +1,4 @@
-package com.chanty.hrms.model.setup;
+package com.chanty.hrms.common.constant;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

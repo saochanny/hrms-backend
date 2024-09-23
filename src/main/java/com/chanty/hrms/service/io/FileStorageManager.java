@@ -1,16 +1,18 @@
 package com.chanty.hrms.service.io;
 
-
-import java.io.File;
+import com.chanty.hrms.dto.io.UploadFileResponse;
+import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.nio.file.Path;
 
-public interface FileManagerService {
-  File uploadFile(File file, Path path) throws IOException;
+public interface FileStorageManager {
+  UploadFileResponse uploadFile(MultipartFile multipartFile, Path path) throws IOException;
 
-  File getFileByPath(Path path);
+  String getFileByPath(Path path) throws IOException;
 
   void createDirectory(Path path) throws IOException;
 
   void deleteFile(Path path) throws IOException;
+
+  String moveFile(Path sourcePath, String specificDir) throws IOException;
 }

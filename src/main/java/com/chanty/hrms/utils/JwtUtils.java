@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
@@ -43,6 +42,14 @@ public class JwtUtils {
         user.getRoles().stream()
             .map(role -> new SimpleGrantedAuthority(RoleConstant.ROLE_PREFIX + role.getName()))
             .collect(Collectors.toSet());
+
+    Set<SimpleGrantedAuthority> permissionAuthorities =
+        user.getRoles().stream()
+            .flatMap(
+                role -> role.getPermissions().stream()
+                    .map(permission -> new SimpleGrantedAuthority(permission.getName().name())))
+            .collect(Collectors.toSet());
+    authorities.addAll(permissionAuthorities);
     return Jwts.builder()
         .setSubject(username)
         .setIssuedAt(new Date())

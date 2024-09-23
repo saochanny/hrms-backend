@@ -1,21 +1,26 @@
 package com.chanty.hrms.model.setup;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-@Table(name = "mail_verifies")
+@Table(name = "mail_verification")
 @Entity
-public class MailVerify {
+public class MailVerification {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
-    private LocalDateTime verifyAt;
+    @Column(name = "verified_at")
+    private LocalDateTime verifiedAt;
+    @Column(name = "email")
     private String email;
+    @Column(name = "is_verified")
     private Boolean isVerified;
+    @Column(name = "token")
     private String token;
 }

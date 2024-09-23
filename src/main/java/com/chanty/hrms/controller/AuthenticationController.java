@@ -1,14 +1,14 @@
 package com.chanty.hrms.controller;
 
-import com.chanty.hrms.dto.LoginRequest;
-import com.chanty.hrms.dto.LoginResponse;
+import com.chanty.hrms.dto.authentication.CurrentUser;
+import com.chanty.hrms.dto.authentication.LoginRequest;
+import com.chanty.hrms.dto.authentication.LoginResponse;
 import com.chanty.hrms.model.setup.User;
 import com.chanty.hrms.service.auth.AuthenticationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
@@ -34,7 +34,7 @@ public class AuthenticationController {
     return ResponseEntity.ok(authenticationService.isValidToken(token));
   }
   @GetMapping("/user")
-  public ResponseEntity<User> getUser(){
+  public ResponseEntity<CurrentUser> getUser(){
     return ResponseEntity.ok(authenticationService.getCurrentUser());
   }
 

@@ -1,6 +1,6 @@
 package com.chanty.hrms.dto.role;
 
-import com.chanty.hrms.model.setup.RoleEnum;
+import com.chanty.hrms.common.constant.RoleEnum;
 import lombok.Builder;
 import lombok.Data;
 

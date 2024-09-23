@@ -1,9 +1,9 @@
 package com.chanty.hrms.repository.setup;
 
-import com.chanty.hrms.model.setup.MailVerify;
+import com.chanty.hrms.model.setup.MailVerification;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MailVerifyRepository extends JpaRepository<MailVerify, Long> {
-    MailVerify findByEmail(String email);
-    MailVerify findByToken(String token);
+public interface MailVerificationRepository extends JpaRepository<MailVerification, Long> {
+    MailVerification findByEmail(String email);
+    MailVerification findByToken(String token);
 }

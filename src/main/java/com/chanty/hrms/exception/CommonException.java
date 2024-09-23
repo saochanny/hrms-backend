@@ -1,2 +1,8 @@
-package com.chanty.hrms.exception;public class CommonException {
+package com.chanty.hrms.exception;
+
+
+public class CommonException extends RuntimeException{
+  public CommonException(String message) {
+    super(message);
+}
 }

@@ -1,2 +1,7 @@
-package com.chanty.hrms.exception;public class UsernameNotFoundException {
+package com.chanty.hrms.exception;
+
+public class UsernameNotFoundException extends RuntimeException {
+  public UsernameNotFoundException(String message) {
+    super(message);
+  }
 }
