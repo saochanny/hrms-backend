@@ -1,6 +1,5 @@
 package com.chanty.hrms.model.setup;
 
-import jakarta.xml.bind.annotation.XmlType;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
